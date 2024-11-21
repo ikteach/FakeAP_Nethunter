@@ -16,7 +16,7 @@ cat << EOF
                                                                 
                                     Version : 1.0
                                  Created By : Ikteach
-                                    YouTube : /ikteachoffical                 
+                                    YouTube : @ikteachoffical                 
 
 EOF
 sleep 4
