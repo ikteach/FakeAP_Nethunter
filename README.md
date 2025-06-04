@@ -1,9 +1,15 @@
 # FakeAP_Nethunter #
-Made by me Ikteach & Dr. Ismail saad
+Made by me Ikteach
 
 This eviltwin script let you run fake access point portal with verification of any given handshake on vritually created wlan1 using Kali Nethunter
 If you want to Deauth orignal network into Attack to disconnect all connected with network then you only need 1 external adapter.
 
+Note:- use can use this 2 types (1) just run fakeap.sh and make fake Evil Portal and get victim login data
+(2) eviltwin script let you run fake access point portal with verification of any given handshake and match password 
+
+To run script 
+chmod +x fakeap.sh
+./fakeap.sh > output.log 2>&1 & tail -f output.log
 
 ## How to Usage ##
 
