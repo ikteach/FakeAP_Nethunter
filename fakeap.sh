@@ -1,7 +1,7 @@
 #!/bin/bash
 LOGFILE="output.log"
 > "$LOGFILE"
-exec > >(tee -a "LOGFILE") 2>&1
+exec > >(tee -a "$LOGFILE") 2>&1
 # Create Fake Access point 
 # Created By Ikteach
 cat << EOF
