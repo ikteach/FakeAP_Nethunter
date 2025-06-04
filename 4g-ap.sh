@@ -15,7 +15,7 @@ cat << EOF
  ::   ::  :::     ::     :: ::::  ::   :::   ::: :::  ::   :::  
 :     :   :::     :     : :: ::    :   : :   :: :: :   :   : :  
                                                                 
-                                    Version : 1.0
+                                    Version : 1.1
                                  Created By : Ikteach
                                     YouTube : @ikteachoffical                 
 
