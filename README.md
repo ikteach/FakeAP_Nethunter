@@ -9,7 +9,7 @@ Note:- use can use this 2 types (1) just run fakeap.sh and make fake Evil Portal
 
 To run script 
 chmod +x fakeap.sh
-./fakeap.sh > output.log 2>&1 & tail -f output.log
+./fakeap.sh
 
 ## How to Usage ##
 
